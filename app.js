@@ -1,11 +1,21 @@
-var name = "namaste prem"
+require("./xyz");
+// const obj = require("./calculate/sum");
+// const { multiply } = require("./calculate/multiply") 
 
 
-var a = 10 
+const { multiply , sum ,x }  = require('./calculate')
+const data = require('./data.json') ;
 
-var b = 20 
+var name = "namaste prem";
 
-console.log(name) ;
-console.log(a+b) 
+var a = 10;
 
-console.log(globalThis)
+var b = 20;
+
+sum(a,b)
+multiply(a,b);
+console.log(data)
+
+console.log(name);
+
+console.log(x);
